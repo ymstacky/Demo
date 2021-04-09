@@ -15,6 +15,23 @@ margin-top: 500px;
 margin-left: 1000px;
 }
 
+.searchbar {
+margin-top: -150px;
+margin-left: -250px;
+
+}
+
+.datepicker {
+margin-left: 300px;
+
+}
+
+.calendar-button {
+margin-top: -40px;
+}
+
+
+
 </style>
 <script src="https://kit.fontawesome.com/28e7d84c49.js" crossorigin="anonymous"></script>
 </head>
@@ -22,34 +39,64 @@ margin-left: 1000px;
 
 
 <body>
+
+<!-- Splash Screen -->
+
 <div class = "splash">
-<img class = "fade-in" src= "img/alogo1.png" style="width:400px; height:200px;">
+<img class = "fade-in" src= "img/alogo1.png" style="width:400px; height:200px;"> 
 </div>
 
+<!-- Navigation Bar -->
 
 <div class = "header">
 
 <div class="sidebar">
-<h2> Aston University Events </h2>
+
+<img src= "img/alogo1.png" alt=" Aston University" style ="width: 200px; height: 100px;">
+
+
 <ul>
-<li><a href="#"><i class="fas fa-home"></i> Home</a><li>
-<li><a href="#"><i class="fas fa-running"></i> Sports</a><li>
-<li><a href="#"><i class="fas fa-hands-helping"></i> Students Life - Culture </a><li>
-<li><a href="#"><i class="fas fa-theater-masks"></i> Other Events</a><li>
-<li><a href="#"><i class="fas fa-sign-in-alt"></i> Login </a><li>
+<li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+<li><a href="#"><i class="fas fa-running"></i> Sports</a></li>
+<li><a href="#"><i class="fas fa-hands-helping"></i> Student Life </a></li>
+<li><a href="#"><i class="fas fa-theater-masks"></i> Other Events</a></li>
+<li><a href="#"><i class="fas fa-sign-in-alt"></i> Login </a></li>
 </ul>
-<div class= "social_media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+
+<!-- Social Media Links -->
+
+<div class="social_media">
+  <a href="https://twitter.com/AstonUniversity"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.facebook.com/astonuniversity"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.instagram.com/astonuniversity/"><i class="fab fa-instagram"></i></a>
+     </div>
+  </div>
+</div>
+
+<!-- Searchbar & Date Picker -->
+
+<div class= "frame">
+
+<div class="searchbar">
+<input class="search-text" type="text" name="searchbar" placeholder=" Search for events...">
+<a class="search-button" href="#"><i class="fas fa-search"></i></a>
+
+<div class= "datepicker">
+<input class= "date" type = "date" name="datepicker" placeholder="">
+<a class="calendar-button" id="1" href="#"><i class="fas fa-calendar"></i></a>
+
+<div class= "datepicker">
+<input class= "date" type = "date" name="datepicker" placeholder="">
+<a class="calendar-button" id="2" href="#"><i class="fas fa-calendar"></i></a>
+
+
       </div>
+    </div>
+  </div>
 </div>
 
 
-</div>
-
-
-
+  
 
 
 <script src="app.js"></script>

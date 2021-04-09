@@ -2,17 +2,25 @@
 
 *{
   margin: 0;
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
 }
+	   
+   .frame {
+	   background-color: black;
+	   padding: 10px;
+	   border: solid 3px white;
+   }
 
-
+  
+/* Navigation Bar */
  .header {
-    background-image: url("img/aston-uni.jpg");
-    background-size: cover;
+	 
+   background-image: url("img/aston-uni.jpg"); 
+   background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
@@ -20,29 +28,23 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100vh;	
+	height: 100vh;
 }
+ 
 
-
-.header .sidebar{
+.header .sidebar {
   width: 200px;
   height: 100%;
-  background: #4b4276;
+  background: #66047e;
   padding: 30px 0px;
   position: fixed;
-}
 
-.header .sidebar h2{
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 30px;
 }
 .header .sidebar ul li{
-  padding: 15px;
+  padding: 25px;
   border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05); 
 }    
 
 .header .sidebar ul li a{
@@ -50,12 +52,13 @@
   display: block;
 }
 
+
 .header .sidebar ul li a .fas{
   width: 25px;
 }
 
 .header .sidebar ul li:hover{
-  background-color: #594f8d;
+  background-color: #630e6b;
 }
 
 .header .sidebar ul li:hover a{
@@ -73,21 +76,17 @@
 .header .sidebar .social_media a{
   display: block;
   width: 40px;
-  background: #594f8d;
   height: 40px;
-  line-height: 45px;
-  text-align: center;
   margin: 0 5px;
-  color: #bdb8d7;
+
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background: #630e6b;
+   
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
 }
-
-
-
-
-
-
 
 
 /* Splashscreen styling */
@@ -102,26 +101,16 @@
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	z-index: 200;
-	color: black;
-	text-align: center;
-	line-height: 90vh;
-}
-	
+    z-index: 400;
 
-	
+}
   .splash.display-none {
 	position: fixed;
 	opacity:0;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100vh;
 	z-index: -10;
-	color: white;
-	text-align: center;
-	line-height: 90vh;
-	transition: alt 0.5s;
+	
 } 
 
 
@@ -138,4 +127,81 @@
 }
 
 
+	/* search-bar */
+	.searchbar{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background:#66047e;
+	height: 60px;
+	border-radius: 40px;
+	padding: 10px;
+	}
+	
+	.search-button {
+		color: white;
+        float : right;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: #630e6b;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.search-text {
+		border: none;
+		background: none;
+		outline: none;
+		float: left;
+		padding: 0px;
+		color: #fff;
+		font-size: 16px;
+		transition: 0.4s;
+		line-height: 40px;
+		width: 200px;
+	}
+	
+	
+	/* Date Picker */
+	
+	.datepicker {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background:#66047e;
+	height: 60px;
+	border-radius: 40px;
+	padding: 10px;
+	}
+		
+	.calendar-button  {
+		color: white;
+        float : right;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: #630e6b;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	
+	.date {
+		border: none;
+		background: none;
+		outline: none;
+		float: left;
+		padding: 0px;
+		color: #fff;
+		font-size: 16px;
+		transition: 0.4s;
+		line-height: 40px;
+		width: 240px;
+		
+	}
 	
